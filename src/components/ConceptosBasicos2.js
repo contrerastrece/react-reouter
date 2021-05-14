@@ -3,6 +3,7 @@ import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContacPaget";
 import Error404 from "../pages/Error404";
 import Home from "../pages/Home";
+import MenuConceptos from "./MenuConceptos";
 
 
 const ConceptosBasicos2 = () => {
@@ -11,6 +12,8 @@ const ConceptosBasicos2 = () => {
       <h2>Conceptos Basicos</h2>
      
       <Router>    
+          <MenuConceptos/>
+        
         <Switch>
 
          <Route exact path="/" component={Home}/>

@@ -13,3 +13,15 @@ html{
 hr{
   margin:2rem auto;
 }
+li{
+margin:0.5rem;
+}
+a{
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.active{
+  border-bottom:1px solid red;
+  padding:.5rem;
+
+}
