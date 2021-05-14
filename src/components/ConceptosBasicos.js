@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import AboutPage from "../pages/AboutPage";
+import ContactPage from "../pages/ContacPaget";
 
 const ConceptosBasicos = () => {
   return (
@@ -55,12 +57,19 @@ const ConceptosBasicos = () => {
             <h3>Home</h3>
             <p>Bienvenido, esta es la pagina principal</p>
           </Route>
-          <Route exact path="/acerca">
-            <h3>Acerca</h3>
+          <Route exact path="/acerca">           
+            <AboutPage/>
           </Route>
-          <Route exact path="/contacto">
-            <h3>Contacto</h3>
+
+          <Route exact path="/contacto">            
+            <ContactPage/>
           </Route>
+          {/* una de las formas para definir nuestro componente Route en una sola linea */}
+          
+          {/* <Route exact pat="/contact" component={ContactPage}/> */}
+          {/* <Route exact pat="/contact" children={<ContactPage/>}/> */}
+
+
         </Switch>
       </Router>
     </div>
