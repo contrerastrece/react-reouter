@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContacPaget";
 
+
 const ConceptosBasicos = () => {
   return (
     <div>
