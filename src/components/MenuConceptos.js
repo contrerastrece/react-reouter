@@ -28,6 +28,12 @@ const MenuConceptos = () => {
           <NavLink exact to="/" activeClassName="active">Home</NavLink>
           <NavLink exact to="/contacto" activeClassName="active">Contact</NavLink>
           <NavLink exact to="/acerca" activeClassName="active">About</NavLink>
+          <NavLink exact to="/no-existe" activeClassName="active">Error 404</NavLink>
+        </li>
+        <li>
+          <span>Parametros: </span>
+          <Link to="/user/vcontreras">Vcontreras</Link>
+          <Link to="/user/somebody">Somebody</Link>
         </li>
       </ol>
     </nav>
