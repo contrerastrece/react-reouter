@@ -35,6 +35,11 @@ const MenuConceptos = () => {
           <Link to="/user/vcontreras">Vcontreras</Link>
           <Link to="/user/somebody">Somebody</Link>
         </li>
+
+        <li>
+          <span>Parametros de consulta</span>
+          <Link to="/productos"> Productos</Link>
+        </li>
       </ol>
     </nav>
   );
