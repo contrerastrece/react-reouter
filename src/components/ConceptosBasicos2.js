@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
 import AboutPage from "../pages/AboutPage";
 import ContactPage from "../pages/ContacPaget";
 import Error404 from "../pages/Error404";
@@ -27,6 +27,16 @@ const ConceptosBasicos2 = () => {
 
          
          <Route exact path="/productos" component={Products}/>
+
+         {/* Redirecciones */}
+
+         <Route exact path="/AboutPage">
+           <Redirect to="/acerca"/>
+         </Route>
+
+         <Route exact path="/ContactPage">
+           <Redirect to="/contacto"/>
+         </Route>
 
          {/* para que nuestra pagina 404 funciones no debe de ir exact
          y otro condicion es que en el path tiene que ir el * que se usará como comodín 

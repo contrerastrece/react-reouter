@@ -40,6 +40,12 @@ const MenuConceptos = () => {
           <span>Parametros de consulta</span>
           <Link to="/productos"> Productos</Link>
         </li>
+
+        <li>
+          <span>Redirecciones</span>
+          <Link to="/AboutPage"> Redireccionar al AboutPage</Link>
+          <Link to="/ContactPage"> Redireccionar al ContactPage</Link>
+        </li>
       </ol>
     </nav>
   );
